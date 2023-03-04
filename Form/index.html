@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <h3 class="head">Create a Confession</h3>
+      <!-- <hr> -->
+      <textarea
+        required
+        placeholder="Title"
+        id="title"
+        name="title"
+        rows="2"
+        cols="100"
+      ></textarea>
+      <br />
+      <textarea
+        placeholder="Secret Key"
+        id="secret-key"
+        name="secret"
+        rows="2"
+        cols="100"
+      ></textarea>
+      <br />
+      <textarea
+        placeholder="Name (optional)"
+        id="name"
+        name="name"
+        rows="2"
+        cols="100"
+      ></textarea>
+      <br />
+      <textarea
+        required
+        placeholder="Text"
+        id="msg"
+        name="text"
+        rows="15"
+        cols="100"
+      ></textarea>
+      <br />
+      <!-- <hr> -->
+      <button class="post-btn">Post</button>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

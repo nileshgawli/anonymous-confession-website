@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INCOGNITO</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../res/images/incognito.png" type="image/x-icon" />
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body class="dark-theme">
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#">
+          <img src="../res/images/incognito.png" alt="LOGO" width="150" height="40" class="logo-dark" />
+          <img src="../res/images/incognito.png" alt="LOGO" width="150" height="40" class="logo-light" />
+        </a>
+
+        <div class="btn-group">
+          <!-- <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="moon"></ion-icon>
+          </button> -->
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="flex-wrapper">
+          <ul class="desktop-nav">
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Developers</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+
+            <!-- <li>
+              <a href="#" class="nav-link">Sign Up</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Log In</a>
+            </li> -->
+            <li>
+              <a href="#" class="nav-link add">Create Post</a>
+              </a>
+            </li>
+          </ul>
+
+
+          <!-- <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button> -->
+        </div>
+
+        <div class="mobile-nav">
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a class="test" href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div>
+              <p class="h3 nav-title">Topics</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Database</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Accessibility</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Web Performance</a>
+                </li>
+              </ul>
+            </div> -->
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main">
+      <div class="container">
+        <div class="post">
+          <div class="span8" id="maincont"></div>
+          <div class="search">
+            <form class="search-form">
+              <input class="write" type="text" placeholder="Write Confession">
+            </form>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Body of the post goes here.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium temporibus recusandae ducimus
+                cupiditate quae corrupti asperiores porro cumque voluptas fugiat velit qui eum labore repudiandae,
+                praesentium vitae delectus suscipit sapiente rerum a exercitationem voluptate dicta sed possimus.
+                Illum
+                hic aut culpa quos perferendis! Voluptatem quis reprehenderit tenetur sapiente hic voluptas unde.
+                Soluta
+                non, libero quibusdam cum amet molestiae, rerum optio ipsa provident distinctio labore omnis
+                excepturi.
+                Doloribus ab velit dolor iusto saepe culpa quos iste? Libero architecto tenetur dolor corporis
+                laboriosam
+                voluptatem ad mollitia quasi.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, repellendus corporis? Eum nisi,
+                voluptatum explicabo cumque fugiat optio expedita saepe? Ab ullam quis, harum omnis quia inventore
+                cupiditate commodi veniam soluta, possimus cum sunt sequi!</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab facilis, molestiae magnam natus tenetur
+                reiciendis recusandae eligendi numquam cupiditate. Inventore, quis quisquam?</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Body of the post goes here.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium temporibus recusandae ducimus
+                cupiditate quae corrupti asperiores porro cumque voluptas fugiat velit qui eum labore repudiandae,
+                praesentium vitae delectus suscipit sapiente rerum a exercitationem voluptate dicta sed possimus.
+                Illum
+                hic aut culpa quos perferendis! Voluptatem quis reprehenderit tenetur sapiente hic voluptas unde.
+                Soluta
+                non, libero quibusdam cum amet molestiae, rerum optio ipsa provident distinctio labore omnis
+                excepturi.
+                Doloribus ab velit dolor iusto saepe culpa quos iste? Libero architecto tenetur dolor corporis
+                laboriosam
+                voluptatem ad mollitia quasi.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, repellendus corporis? Eum nisi,
+                voluptatum explicabo cumque fugiat optio expedita saepe? Ab ullam quis, harum omnis quia inventore
+                cupiditate commodi veniam soluta, possimus cum sunt sequi!</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab facilis, molestiae magnam natus tenetur
+                reiciendis recusandae eligendi numquam cupiditate. Inventore, quis quisquam?</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Body of the post goes here.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+          <div class="post-container">
+            <span class="post-author">Posted by u/username</span>
+            <div class="post-header">
+              <h2 class="post-title">Title of the post</h2>
+            </div>
+            <div class="post-content">
+              <p>Body of the post goes here.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-comments">
+                Comments
+              </span>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+          <!-- Confession sessiion -->
+
+          <!--
+          <div class="post-card-group">
+            <div class="post-card">
+              <div class="post-title">
+                Ever since I saw you in...
+              </div>
+              <div class="post-msg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id libero, impedit laboriosam laborum maxime
+                velit similique repellat iste repellendus voluptatibus provident ea, eos accusamus adipisci.
+              </div>
+              <a href="" class="comments">Comments</a>
+            </div>
+          </div> -->
+          <!--
+            <div class="post-card">
+              <div class="post-card-banner">
+                <img src="./assets/images/blog-2.png" alt="Fast web page loading on a $20 feature phone" width="250"
+                  class="post-banner-img" />
+              </div>
+
+              <div class="post-content-wrapper">
+                <button class="post-topic text-tiny">Web Performance</button>
+
+                <h3>
+                  <a href="" class="h3">Fast web page loading on a $20 feature phone</a>
+                </h3>
+
+                <p class="post-text">
+                  Feature phones are affordable (under $20-25), low-end
+                  devices enabling 100s of millions of users in developing
+                  countries to leverage the web. Think of them as a light
+                  version of a smart phone.
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-12-10">Dec 10, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT2M">2 min</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-card">
+              <div class="post-card-banner">
+                <img src="./assets/images/blog-3.png" alt="Accessibility Tips for Web Developers" width="250"
+                  class="post-banner-img" />
+              </div>
+
+              <div class="post-content-wrapper">
+                <button class="post-topic text-tiny">Accessibility</button>
+
+                <h3>
+                  <a href="" class="h3">Accessibility Tips for Web Developers</a>
+                </h3>
+
+                <p class="post-text">
+                  It's awesome to build sites that are inclusive and
+                  accessible to everyone. There are at least six key areas of
+                  disability we can optimize for: visual, hearing, mobility,
+                  cognition, speech and neural. Many tools and resources can
+                  help here, even if you're totally new to web accessibility.
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-28">Nov 28, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-card">
+              <div class="post-card-banner">
+                <img src="./assets/images/blog-4.png" alt="Dynamically Securing Databases using Hashicorp Vault"
+                  width="250" class="post-banner-img" />
+              </div>
+
+              <div class="post-content-wrapper">
+                <button class="post-topic text-tiny">Database</button>
+
+                <h3>
+                  <a href="" class="h3">Dynamically Securing Databases using Hashicorp Vault</a>
+                </h3>
+
+                <p class="post-text">
+                  Nowadays, it's hard to profoundly talk about security in the
+                  IT industry, since it has to be considered on so many
+                  different levels: from securing code chunks, securing
+                  containers, up to securing complex infrastructures and
+                  defining strong authorization and authentication policies
+                  across the enterprise.
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-20">Nov 20, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-card">
+              <div class="post-card-banner">
+                <img src="./assets/images/blog-5.png"
+                  alt="Adaptive Loading - Improving Web Performance on low-end devices" width="250"
+                  class="post-banner-img" />
+              </div>
+
+              <div class="post-content-wrapper">
+                <button class="post-topic text-tiny">Web Performance</button>
+
+                <h3>
+                  <a href="" class="h3">Adaptive Loading - Improving Web Performance on low-end
+                    devices</a>
+                </h3>
+
+                <p class="post-text">
+                  Adaptive Loading: Do not just respond based on screen size,
+                  adapt based on actual device hardware. Any user can have a
+                  slow experience. In a world with widely varying device
+                  capabilities, a "one-size" fits all experience may not
+                  always work. Sites that delight users on high-end devices
+                  can be unusable on low-end ones, particularly on median
+                  mobile and desktop hardware and in emerging markets.
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-10">Nov 10, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-card">
+              <div class="post-card-banner">
+                <img src="./assets/images/blog-6.png"
+                  alt="Don't Develop Just for Yourself - A Developer's Checklist to Accessibility" width="250"
+                  class="post-banner-img" />
+              </div>
+
+              <div class="post-content-wrapper">
+                <button class="post-topic text-tiny">Accessibility</button>
+
+                <h3>
+                  <a href="" class="h3">Don't Develop Just for Yourself - A Developer's Checklist
+                    to Accessibility</a>
+                </h3>
+
+                <p class="post-text">
+                  We, as developers, tend to develop sites unconsciously for
+                  people like ourselves. If we don't actively pay attention,
+                  the sites are often accessible only for certain types of
+                  people: Sighted mouse-users, who have good fine motor skills
+                  and are good at using computers.
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-25">Oct 25, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">7 min</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+        </div>
+        <!--
+          - ASIDE
+        -->
+
+        <div class="aside">
+          <!-- <div class="topics">
+            <h2 class="h2">Hello friends! </h2>
+            <p class="rules">Please follow the rules before confessing;</p>
+            <p class="rules">Submission Rules:</p>
+            <br>
+            <p class="rules">1. It must be a confession.</p>
+            <p class="rules">2. No contact information to be shared</p>
+            <p class="rules">3. Foul language or revelation of personal information will be edited. Though the integrity of message will be kept.</p>
+            <p class="rules">4. Please keep in mind this is a confessions page, not an opinions page. Political posts, religious views, racial discrimination of any kind, abuse, hate speech or threatening post or submissions will not be tolerated and submissions of such will NOT be posted and the user may be blocked.</p>
+            <p class="rules">5. Refrain from defamation, controversial topics and hurtful comments. Offensive or unverified topics are not to be discussed and will not be posted. This is not a place for heated debates! Be respectful to everyone.</p>
+            <p class="rules">Be assured that the page administrator and our team doesn’t see identifying information – just the latest confession.</p>
+          </div> -->
+
+          <!-- <div class="tags">
+            <h2 class="h2">Tags</h2>
+
+            <div class="wrapper">
+              <button class="hashtag">#mongodb</button>
+              <button class="hashtag">#nodejs</button>
+              <button class="hashtag">#a11y</button>
+              <button class="hashtag">#mobility</button>
+              <button class="hashtag">#inclusion</button>
+              <button class="hashtag">#webperf</button>
+              <button class="hashtag">#optimize</button>
+              <button class="hashtag">#performance</button>
+            </div>
+          </div> -->
+
+          <div class="contact">
+            <h2 class="h2">Let's Talk</h2>
+
+            <div class="wrapper">
+              <p>
+                Do you want to learn more about how I can help your company
+                overcome problems? Let us have a conversation.
+              </p>
+
+              <ul class="social-link">
+                <li>
+                  <a href="#" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="newsletter">
+            <h2 class="h2">Newsletter</h2>
+
+            <div class="wrapper">
+              <p>
+                Subscribe to our newsletter to be among the first to keep up
+                with the latest updates.
+              </p>
+
+              <form action="#">
+                <input type="email" name="email" placeholder="Email Address" required />
+
+                <button type="submit" class="btn btn-primary">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </main>
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="container">
+      <div class="wrapper">
+        <a href="#" class="footer-logo">
+          <img src="../res/images/incognito.png" alt="Logo" width="150" height="40" class="logo-light" />
+          <img src="../res/images/incognito.png" alt="Logo" width="150" height="40" class="logo-dark" />
+        </a>
+
+        <p class="footer-text">
+          Confess without thinking twice with us.
+        </p>
+      </div>
+
+      <div class="wrapper">
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+          <li>
+            <a href="#" class="footer-link">Donate</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrapper">
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+          <li>
+            <!-- <a href="#" class="footer-link">Admin</a> -->
+            <div class="footer-link admin">Admin</div>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cookie Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms Of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2023 <a href="#">@confessionterna</a>
+    </p>
+  </footer>
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.light-theme {
+    --background-primary: hsl(0, 0%, 100%);
+    --background-secondary: hsl(0, 0%, 97%);
+    --action-primary: hsl(214, 32%, 91%);
+    --action-secondary: hsl(210, 38%, 95%);
+    --foreground-primary: hsl(218, 23%, 23%);
+    --foreground-secondary: hsl(216, 15%, 52%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+    --inside: hsl(216, 22%, 25%);
+    --accent: hsl(229, 76%, 66%);
+  }
+  .dark-theme {
+    --background-primary: hsl(218, 23%, 23%);
+    --background-secondary: hsl(220, 26%, 14%);
+    --action-primary: hsl(216, 15%, 52%);
+    --action-secondary: hsl(218, 23%, 23%);
+    --foreground-primary: hsl(210, 38%, 95%);
+    --foreground-secondary: hsl(211, 25%, 84%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+    --accent: hsl(229, 76%, 66%);
+  }
+
+  body{
+    background: hsl(220, 26%, 14%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, sans-serif;
+}
+.form{
+    background: hsl(218, 23%, 23%);
+    padding: 15px;
+    font-family: Inter, sans-serif;
+    border-radius: 7px;
+}
+.head{
+    font-family: Inter, sans-serif;
+    color: rgb(202, 202, 202);
+    text-align: center;
+}
+
+textarea{
+    /* height: 2rem; */
+    color: rgb(202, 202, 202);
+    background: hsl(220, 26%, 14%);
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Inter, sans-serif;
+}
+hr{
+    background-color:antiquewhite;
+    border: none;
+    height: 1px;
+}
+.post-btn{
+    background: rgb(202, 202, 202);
+    font: black;
+    font-weight: 400;
+    float: right;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
